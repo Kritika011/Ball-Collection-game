@@ -12,6 +12,9 @@ pygame.init()
 screen = pygame.display.set_mode((800, 600))
 clock = pygame.time.Clock()
 
+font = pygame.font.Font(None, 50)
+text = font.render("Click to Start", True, (255, 255, 255))
+
 async def main():
     screen.fill((0, 0, 0))
     screen.blit(text, (250, 300))
